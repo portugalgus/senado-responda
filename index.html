@@ -153,192 +153,83 @@ footer {
   .btn { width:100%; }
   .people { font-size:.88rem; }
 }
+
+.hero { padding:48px 22px 36px; }
+.hero h1 { font-size:clamp(2.1rem,5.8vw,4.1rem); }
+.hero p { font-size:1.08rem; }
+.hero .action-help { margin:10px 0 16px; font-size:.85rem; color:#d8e6f5; }
+.hero .read-more { color:#fff; font-size:.9rem; text-underline-offset:4px; }
+.hero .btn { margin-top:22px; text-align:center; }
+section { padding:32px 22px; }
+h2 { font-size:1.7rem; line-height:1.2; }
+.card { padding:20px; margin:0; }
+.card h3 { font-size:1.05rem; color:var(--accent); margin:0 0 10px; }
+.card p { margin:0; }
+.grid { margin-top:20px; }
+.note { margin:22px 0 0; }
+.note p { margin:6px 0 0; }
+.const { margin:0 0 24px; padding:22px; }
+.const p { margin:8px 0 0; }
+.cta { padding:26px; }
+.cta h2 { font-size:clamp(1.6rem,4vw,2.2rem); }
+.cta p { margin:10px 0 0; font-size:.85rem; color:#d8e6f5; }
+.mesa-list { list-style:none; padding:0; margin:16px 0 0; display:grid; grid-template-columns:1fr 1fr; gap:0 24px; }
+.mesa-list li { padding:10px 0; border-bottom:1px solid var(--line); font-size:.9rem; }
+.mesa-list span { display:block; color:var(--muted); font-size:.8rem; }
+.source-list { padding-left:20px; font-size:.85rem; overflow-wrap:anywhere; }
+.source-list a { text-underline-offset:3px; }
+footer { padding:24px 22px; }
+.floating-cta { display:none; }
+a:focus-visible { outline:3px solid #d4a72c; outline-offset:4px; }
+@media(max-width:640px) {
+  .hero { padding:28px 20px; }
+  .hero .fact { font-size:.65rem; margin-bottom:12px; }
+  .hero p { font-size:1rem; line-height:1.5; }
+  section { padding:26px 20px; }
+  .grid { grid-template-columns:1fr; gap:12px; }
+  .card { padding:16px; font-size:.94rem; }
+  .mesa-list { grid-template-columns:1fr; }
+  .btn { font-size:.94rem; padding:14px 12px; }
+  .cta { padding:22px 16px; }
+  .floating-cta { display:block; position:fixed; z-index:10; bottom:calc(12px + env(safe-area-inset-bottom)); left:50%; width:max-content; max-width:calc(100% - 32px); margin:0; transform:translateY(100px) translateX(-50%); visibility:hidden; background:var(--accent); color:#fff; border:1px solid #ffffff70; box-shadow:0 3px 16px #17202a30; padding:12px 18px; border-radius:30px; font-size:.85rem; transition:transform .2s; }
+  .floating-cta.is-visible { visibility:visible; transform:translateY(0) translateX(-50%); }
+  footer { padding-bottom:calc(90px + env(safe-area-inset-bottom)); }
+}
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .floating-cta { transition:none; } }
+
 </style>
 </head>
+
 <body>
-
-<header class="hero">
-  <div class="wrap">
-    <div class="fact" style="color:#d8e6f5">Controle institucional • transparência • devido processo</div>
-    <h1>O Senado precisa responder à sociedade.</h1>
-    <p>Ministros do STF não estão acima do escrutínio público. Mas cabe ao Senado transformar a cobrança da sociedade em ação institucional. Neste momento, exercer a cidadania é também cobrar de nossos representantes que cumpram seu papel constitucional.</p>
-  </div>
-</header>
-
-<nav>
-  <div class="wrap">
-    <a href="#convite">Convite</a>
-    <a href="#contexto">Contexto</a>
-    <a href="#fatos">Fatos e alegações</a>
-    <a href="#senado">Papel do Senado</a>
-    <a href="#mesa">Mesa Diretora</a>
-    <a href="#agir">Agir</a>
-    <a href="#fontes">Fontes</a>
-  </div>
-</nav>
-
+<header class="hero" id="topo"><div class="wrap">
+<div class="fact" style="color:#d8e6f5">Controle institucional • transparência • devido processo</div>
+<h1>O Senado precisa responder à sociedade.</h1>
+<p>Ministros do STF não estão acima do escrutínio público. Cabe ao Senado exercer seu papel constitucional. Exercer a cidadania é cobrar de nossos representantes uma resposta.</p>
+<a class="btn mail-action " href="mailto:sen.davialcolumbre@senado.leg.br,sen.eduardogomes@senado.leg.br,sen.humbertocosta@senado.leg.br,sen.daniellaribeiro@senado.leg.br,sen.confuciomoura@senado.leg.br,sen.anapaulalobato@senado.leg.br,sen.laerciooliveira@senado.leg.br?subject=O%20Senado%20deve%20dar%20uma%20resposta%20%C3%A0%20sociedade%20brasileira&amp;body=Senadores%20e%20Senadoras%2C%0A%0AO%20Brasil%20atravessa%20um%20momento%20que%20exige%20do%20Senado%20Federal%20coragem%20institucional%20e%20responsabilidade.%0A%0AOs%20senhores%20e%20senhoras%20ocupam%20essas%20cadeiras%20porque%20foram%20escolhidos%20pelo%20povo%20para%20represent%C3%A1-lo%2C%20especialmente%20nos%20momentos%20em%20que%20o%20exerc%C3%ADcio%20da%20cidadania%20exige%20uma%20resposta%20firme%20de%20nossas%20institui%C3%A7%C3%B5es.%0A%0AAs%20informa%C3%A7%C3%B5es%20documentadas%20que%20vieram%20a%20p%C3%BAblico%20no%20contexto%20das%20investiga%C3%A7%C3%B5es%20relacionadas%20ao%20Banco%20Master%20s%C3%A3o%20graves%20e%20ampliam%20a%20necessidade%20de%20transpar%C3%AAncia%2C%20esclarecimento%20e%20controle%20institucional.%20N%C3%A3o%20%C3%A9%20razo%C3%A1vel%20que%20acusa%C3%A7%C3%B5es%20dessa%20magnitude%20permane%C3%A7am%20indefinidamente%20sem%20uma%20resposta%20do%20%C3%B3rg%C3%A3o%20ao%20qual%20a%20Constitui%C3%A7%C3%A3o%20atribuiu%20compet%C3%AAncia%20para%20processar%20e%20julgar%20ministros%20do%20Supremo%20Tribunal%20Federal%20por%20crimes%20de%20responsabilidade.%0A%0AN%C3%A3o%20pe%C3%A7o%20condena%C3%A7%C3%A3o%20antecipada.%20Pe%C3%A7o%20algo%20mais%20elementar%3A%20que%20o%20Senado%20cumpra%20seu%20papel.%0A%0AQue%20os%20pedidos%20sejam%20analisados.%20Que%20existam%20decis%C3%B5es%20fundamentadas.%20Que%20os%20fatos%20sejam%20apurados.%20Que%20os%20acusados%20tenham%20pleno%20direito%20de%20defesa.%20E%20que%20a%20sociedade%20receba%20uma%20resposta.%0A%0ASe%20os%20pedidos%20n%C3%A3o%20possuem%20fundamento%2C%20que%20sejam%20rejeitados%20de%20forma%20fundamentada.%20Se%20existem%20elementos%20suficientes%2C%20que%20tenham%20o%20devido%20prosseguimento.%0A%0AO%20que%20n%C3%A3o%20podemos%20aceitar%20%C3%A9%20que%20o%20exerc%C3%ADcio%20dessa%20compet%C3%AAncia%20constitucional%20seja%20substitu%C3%ADdo%20pela%20omiss%C3%A3o%20ou%20pelo%20sil%C3%AAncio.%0A%0AOs%20senhores%20e%20senhoras%20foram%20conduzidos%20ao%20Senado%20pelo%20voto%20popular.%20Neste%20momento%2C%20t%C3%AAm%20diante%20de%20si%20a%20oportunidade%20e%20a%20responsabilidade%20de%20demonstrar%20que%20essa%20representa%C3%A7%C3%A3o%20tem%20significado.%0A%0AA%20atua%C3%A7%C3%A3o%20de%20cada%20parlamentar%2C%20assim%20como%20sua%20omiss%C3%A3o%2C%20far%C3%A1%20parte%20da%20hist%C3%B3ria%20deste%20per%C3%ADodo%20e%20ser%C3%A1%20determinante%20para%20a%20forma%20como%20esta%20legislatura%20ser%C3%A1%20lembrada%20pela%20sociedade%20brasileira.%0A%0AO%20Senado%20deve%20uma%20resposta%20ao%20Brasil.%0A%0AExer%C3%A7am%20a%20compet%C3%AAncia%20que%20a%20Constitui%C3%A7%C3%A3o%20lhes%20confiou.%0A%0AAtenciosamente%2C%0A%0A%5BSEU%20NOME%5D%0A%5BCIDADE%20%2F%20ESTADO%5D%0A">✉ Cobrar os parlamentares</a>
+<p class="action-help">Abre uma mensagem pronta à Mesa do Senado. Leia e envie.</p>
+<a class="read-more" href="#fatos">Quer entender por quê? Continue lendo ↓</a>
+</div></header>
 <main>
-<section id="convite">
-  <div class="wrap">
-    <h2>Este é um convite para você exercer sua cidadania.</h2>
-    <p class="lead">Se a sociedade permanecer em silêncio, não há razão para esperar que nossas instituições reajam por conta própria. Os parlamentares foram eleitos para nos representar, e cobrar deles uma atuação diante de fatos graves também faz parte do exercício da cidadania.</p>
-    <p>Leia esta página, conheça os fatos e entenda o papel constitucional do Senado.</p>
-    <p>Ao final, clique em <strong>“COBRAR OS PARLAMENTARES”</strong> para abrir uma mensagem dirigida aos integrantes da Mesa do Senado, cobrando análise, transparência e uma resposta institucional aos pedidos de impeachment apresentados contra ministros do STF.</p>
-    <div class="note"><strong>Não estamos pedindo uma condenação antecipada. Estamos pedindo que nossos representantes exerçam a competência que a Constituição lhes atribuiu.</strong></div>
-  </div>
-</section>
-
-<section id="contexto" style="background:#fff">
-  <div class="wrap">
-    <h2>Por que isso importa?</h2>
-    <p class="lead">As investigações relacionadas ao Banco Master trouxeram a público mensagens, contratos, movimentações financeiras e relações envolvendo empresários, agentes públicos e autoridades. Algumas informações dizem respeito a integrantes do Supremo Tribunal Federal.</p>
-    <div class="note">
-      <strong>É uma questão de princípios:</strong> já existem fatos objetivos, documentados e de extrema gravidade que exigem uma resposta institucional. Contratos, mensagens, relações e circunstâncias reveladas pelas investigações não são mera especulação política. A existência desses fatos está documentada, ainda que sua eventual ilicitude e a responsabilidade de cada envolvido devam ser apuradas com o devido processo. <strong>A sociedade brasileira merece uma resposta apropriada do Senado.</strong>
-    </div>
-    <p>O ponto central não é antecipar condenações. É exigir que acusações graves recebam análise institucional, resposta fundamentada e transparência.</p>
-  </div>
-</section>
-
-<section id="fatos" style="background:#fff">
-  <div class="wrap">
-    <h2>Fatos públicos e questões em aberto</h2>
-    <p class="lead">Os pontos abaixo resumem informações divulgadas por fontes oficiais e veículos de imprensa. Eles não substituem investigação nem julgamento.</p>
-
-    <div class="grid">
-      <article class="card">
-        <div class="fact">Alexandre de Moraes</div>
-        <h3>Contrato com o escritório de sua esposa</h3>
-        <p>Veio a público contrato de R$ 131 milhões entre o Banco Master e o escritório de Viviane Barci de Moraes. Reportagens baseadas em análise da Polícia Federal indicaram que Alexandre de Moraes realizou edições no documento antes de sua assinatura.</p>
-        <p class="small">O escritório afirma que prestou serviços jurídicos e de consultoria. A existência do contrato ou das edições, por si só, não comprova prática ilícita.</p>
-      </article>
-
-      <article class="card">
-        <div class="fact">Alexandre de Moraes</div>
-        <h3>Mensagens e contatos com Daniel Vorcaro</h3>
-        <p>Relatórios e mensagens apreendidos no contexto da investigação do Banco Master passaram a ser examinados publicamente e provocaram pedidos de esclarecimento e de apuração sobre a relação entre Moraes e Daniel Vorcaro.</p>
-        <p class="small">O conteúdo deve ser avaliado no contexto integral dos autos. Mensagens de terceiros e referências a autoridades não equivalem, por si sós, à comprovação de conduta ilícita.</p>
-      </article>
-
-      <article class="card">
-        <div class="fact">Dias Toffoli</div>
-        <h3>Operações financeiras sob suspeita</h3>
-        <p>Informações divulgadas em setembro de 2026 indicaram suspeitas da Polícia Federal sobre operações envolvendo R$ 35 milhões, fundos de investimento e empresa ligada à família de Dias Toffoli.</p>
-        <p class="small">O gabinete de Toffoli nega envolvimento irregular. O caso foi arquivado pelo STF por ausência de indícios suficientes, segundo a cobertura publicada.</p>
-      </article>
-
-      <article class="card">
-        <div class="fact">Davi Alcolumbre</div>
-        <h3>Pressão por uma decisão do Senado</h3>
-        <p>Senadores têm solicitado que a Presidência do Senado dê andamento ou resposta aos pedidos de impeachment contra ministros do STF. Em sessão recente, questionado sobre previsão para pautar pedido contra Alexandre de Moraes, Alcolumbre respondeu: “Não tenho”.</p>
-        <p class="small">Reportagens também registram que Alcolumbre prefere aguardar uma definição do próprio STF sobre o caso Moraes.</p>
-      </article>
-    </div>
-
-    <div class="note">
-      <strong>Sobre o Banco Master e Davi Alcolumbre:</strong> alegações envolvendo o presidente do Senado também apareceram no contexto das apurações. Alcolumbre nega ter recebido valores de Daniel Vorcaro. <strong>O poder de controle institucional não pode, na prática, ficar concentrado nas mãos de uma única autoridade, sobretudo quando essa própria autoridade é citada em alegações relacionadas aos fatos sob apuração. A Mesa do Senado deve honrar sua função de representação e garantir que os pedidos de impeachment recebam análise, tramitação e decisão institucional.</strong>
-    </div>
-  </div>
-</section>
-
-<section id="senado">
-  <div class="wrap">
-    <h2>O que a Constituição atribui ao Senado?</h2>
-    <div class="const">
-      <strong>Constituição Federal, art. 52, II</strong>
-      <p>Compete privativamente ao Senado Federal processar e julgar os ministros do Supremo Tribunal Federal nos crimes de responsabilidade.</p>
-    </div>
-    <p>Isso não significa que todo pedido de impeachment deva resultar em processo ou condenação. Significa que existe um órgão constitucionalmente responsável por avaliar esse tipo de acusação.</p>
-    <p><strong>Uma resposta institucional pode ser admitir, rejeitar ou determinar o prosseguimento de um pedido. O que a sociedade pode legitimamente exigir é análise, fundamentação e transparência.</strong></p>
-  </div>
-</section>
-
-<section style="background:#fff">
-  <div class="wrap">
-    <h2>Não é uma campanha contra o STF</h2>
-    <p>O Supremo Tribunal Federal exerce função essencial na ordem constitucional. Justamente por isso, seus integrantes devem estar sujeitos aos mecanismos de controle previstos pela própria Constituição.</p>
-    <div class="grid">
-      <div class="card"><strong>Investigar</strong><br>não significa condenar.</div>
-      <div class="card"><strong>Fiscalizar</strong><br>não significa atacar uma instituição.</div>
-      <div class="card"><strong>Decidir</strong><br>não significa ceder a pressão política.</div>
-    </div>
-    <p>O mesmo padrão deve valer para todos, seja qual for o partido, governo, posição ideológica ou autoridade envolvida.</p>
-  </div>
-</section>
-
-<section id="mesa">
-  <div class="wrap">
-    <h2>Quem dirige o Senado Federal</h2>
-    <p class="lead">Composição oficial da Comissão Diretora do Senado, atualizada em 11 de setembro de 2026.</p>
-    <div style="overflow:auto">
-      <table class="people">
-        <thead>
-          <tr><th>Cargo</th><th>Senador(a)</th><th>Partido/UF</th><th>E-mail</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Presidente</td><td>Davi Alcolumbre</td><td>UNIÃO/AP</td><td><a href="mailto:sen.davialcolumbre@senado.leg.br">sen.davialcolumbre@senado.leg.br</a></td></tr>
-          <tr><td>1º Vice-Presidente</td><td>Eduardo Gomes</td><td>PL/TO</td><td><a href="mailto:sen.eduardogomes@senado.leg.br">sen.eduardogomes@senado.leg.br</a></td></tr>
-          <tr><td>2º Vice-Presidente</td><td>Humberto Costa</td><td>PT/PE</td><td><a href="mailto:sen.humbertocosta@senado.leg.br">sen.humbertocosta@senado.leg.br</a></td></tr>
-          <tr><td>1ª Secretária</td><td>Daniella Ribeiro</td><td>PP/PB</td><td><a href="mailto:sen.daniellaribeiro@senado.leg.br">sen.daniellaribeiro@senado.leg.br</a></td></tr>
-          <tr><td>2º Secretário</td><td>Confúcio Moura</td><td>MDB/RO</td><td><a href="mailto:sen.confuciomoura@senado.leg.br">sen.confuciomoura@senado.leg.br</a></td></tr>
-          <tr><td>3ª Secretária</td><td>Ana Paula Lobato</td><td>PSB/MA</td><td><a href="mailto:sen.anapaulalobato@senado.leg.br">sen.anapaulalobato@senado.leg.br</a></td></tr>
-          <tr><td>4º Secretário</td><td>Laércio Oliveira</td><td>PP/SE</td><td><a href="mailto:sen.laerciooliveira@senado.leg.br">sen.laerciooliveira@senado.leg.br</a></td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section id="agir">
-  <div class="wrap">
-    <div class="cta">
-      <div class="fact" style="color:#d8e6f5">Participação cívica</div>
-      <h2>Cobre uma resposta do Senado.</h2>
-      <p>O botão abaixo abre uma mensagem pronta para os sete integrantes titulares da Mesa do Senado. Leia, personalize se desejar e envie.</p>
-      <a class="btn" href="mailto:sen.davialcolumbre@senado.leg.br,sen.eduardogomes@senado.leg.br,sen.humbertocosta@senado.leg.br,sen.daniellaribeiro@senado.leg.br,sen.confuciomoura@senado.leg.br,sen.anapaulalobato@senado.leg.br,sen.laerciooliveira@senado.leg.br?subject=Pedido%20de%20an%C3%A1lise%20dos%20pedidos%20de%20impeachment%20de%20ministros%20do%20STF&body=Senadores%20e%20Senadoras%2C%0A%0AComo%20cidad%C3%A3o%20brasileiro%2C%20solicito%20que%20o%20Senado%20Federal%20exer%C3%A7a%20plenamente%20sua%20compet%C3%AAncia%20constitucional%20e%20d%C3%AA%20resposta%20institucional%20aos%20pedidos%20de%20impeachment%20apresentados%20contra%20ministros%20do%20Supremo%20Tribunal%20Federal.%0A%0AAs%20informa%C3%A7%C3%B5es%20tornadas%20p%C3%BAblicas%20nas%20investiga%C3%A7%C3%B5es%20relacionadas%20ao%20Banco%20Master%20ampliaram%20a%20necessidade%20de%20transpar%C3%AAncia%2C%20esclarecimento%20e%20controle%20institucional.%0A%0AN%C3%A3o%20pe%C3%A7o%20condena%C3%A7%C3%A3o%20antecipada%20de%20qualquer%20autoridade.%20Pe%C3%A7o%20an%C3%A1lise%2C%20devido%20processo%2C%20transpar%C3%AAncia%20e%20decis%C3%A3o.%0A%0ASe%20os%20pedidos%20n%C3%A3o%20possuem%20fundamento%2C%20que%20sejam%20rejeitados%20de%20forma%20fundamentada.%20Se%20existem%20elementos%20suficientes%2C%20que%20sejam%20processados%20nos%20termos%20da%20Constitui%C3%A7%C3%A3o%20e%20da%20lei.%0A%0AO%20que%20considero%20incompat%C3%ADvel%20com%20a%20responsabilidade%20institucional%20do%20Senado%20%C3%A9%20que%20acusa%C3%A7%C3%B5es%20dessa%20gravidade%20permane%C3%A7am%20indefinidamente%20sem%20uma%20resposta%20clara%20%C3%A0%20sociedade.%0A%0AO%20Senado%20%C3%A9%20o%20%C3%B3rg%C3%A3o%20constitucionalmente%20competente%20para%20exercer%20essa%20fun%C3%A7%C3%A3o.%0A%0APe%C3%A7o%2C%20portanto%2C%20que%20cumpra%20esse%20papel.%0A%0AAtenciosamente%2C%0A%0A%5BSEU%20NOME%5D%0A%5BCIDADE%20/%20ESTADO%5D%0A">✉ COBRAR OS PARLAMENTARES</a>
-      <button class="btn secondary" onclick="copyMessage()">📋 COPIAR TEXTO</button>
-      <p class="small" style="color:#d8e6f5;margin-top:18px">O envio não é automático. Você continua no controle da mensagem e precisa confirmar o envio no seu aplicativo de e-mail.</p>
-    </div>
-
-    <div class="card">
-      <h3>Mensagem sugerida</h3>
-      <pre id="message" style="white-space:pre-wrap;font-family:Arial,Helvetica,sans-serif;line-height:1.55;margin:0">Senadores e Senadoras,
-
-O Brasil atravessa um momento que exige do Senado Federal coragem institucional e responsabilidade.
-
-Os senhores e senhoras ocupam essas cadeiras porque foram escolhidos pelo povo para representá-lo, especialmente nos momentos em que o exercício da cidadania exige uma resposta firme de nossas instituições.
-
-As informações documentadas que vieram a público no contexto das investigações relacionadas ao Banco Master são graves e ampliam a necessidade de transparência, esclarecimento e controle institucional. Não é razoável que acusações dessa magnitude permaneçam indefinidamente sem uma resposta do órgão ao qual a Constituição atribuiu competência para processar e julgar ministros do Supremo Tribunal Federal por crimes de responsabilidade.
-
-Não peço condenação antecipada. Peço algo mais elementar: que o Senado cumpra seu papel.
-
-Que os pedidos sejam analisados. Que existam decisões fundamentadas. Que os fatos sejam apurados. Que os acusados tenham pleno direito de defesa. E que a sociedade receba uma resposta.
-
-Se os pedidos não possuem fundamento, que sejam rejeitados de forma fundamentada. Se existem elementos suficientes, que tenham o devido prosseguimento.
-
-O que não podemos aceitar é que o exercício dessa competência constitucional seja substituído pela omissão ou pelo silêncio.
-
-Os senhores e senhoras foram conduzidos ao Senado pelo voto popular. Neste momento, têm diante de si a oportunidade e a responsabilidade de demonstrar que essa representação tem significado.
-
-A atuação de cada parlamentar, assim como sua omissão, fará parte da história deste período e será determinante para a forma como esta legislatura será lembrada pela sociedade brasileira.
-
-O Senado deve uma resposta ao Brasil.
-
-Exerçam a competência que a Constituição lhes confiou.
-
-Atenciosamente,
-
-[SEU NOME]
-[CIDADE / ESTADO]
-</pre>
-    </div>
-  </div>
-</section>
-
-<section id="fontes" style="background:#fff">
-  <div class="wrap">
-    <h2>Fontes e documentos</h2>
-    <p class="lead">Prefira sempre documentos oficiais. Reportagens são usadas para fatos ainda não consolidados em páginas institucionais abertas.</p>
-    <ol class="source-list">
+<section id="fatos" style="background:#fff"><div class="wrap">
+<h2>O que está acontecendo?</h2>
+<div class="grid">
+<article class="card"><h3>Alexandre de Moraes</h3><p>Reportagens apontam contrato de R$ 131 milhões entre o Banco Master e o escritório de sua esposa, além de mensagens e contatos sob apuração. O escritório afirma ter prestado serviços. Esses fatos, por si só, não comprovam ilicitude.</p></article>
+<article class="card"><h3>Dias Toffoli</h3><p>A PF levantou suspeitas sobre operações com fundos e empresa ligada à sua família. Toffoli nega irregularidades. Segundo a cobertura citada, o caso foi arquivado pelo STF por falta de indícios suficientes.</p></article>
+<article class="card"><h3>Davi Alcolumbre</h3><p>Preside o Senado e tem papel central na tramitação dos pedidos. Parlamentares cobram uma decisão. Também foi citado em alegações sobre o caso Master e nega ter recebido valores de Vorcaro.</p></article>
+</div>
+<div class="note"><strong>É uma questão de princípios.</strong><p>Os fatos documentados exigem uma resposta institucional. Não cabe a esta página declarar culpados. <strong>Cabe ao Senado analisar os pedidos e decidir, com transparência e devido processo.</strong></p></div>
+</div></section>
+<section id="senado"><div class="wrap">
+<div class="const"><h2>Quem pode agir? O Senado.</h2><p>O <a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm#art52" target="_blank" rel="noopener">art. 52, II, da Constituição</a> atribui ao Senado competência para processar e julgar ministros do STF por crimes de responsabilidade.</p></div>
+<div class="cta" id="agir"><h2>Não pedimos condenação.<br>Pedimos uma decisão.</h2>
+<a class="btn mail-action " href="mailto:sen.davialcolumbre@senado.leg.br,sen.eduardogomes@senado.leg.br,sen.humbertocosta@senado.leg.br,sen.daniellaribeiro@senado.leg.br,sen.confuciomoura@senado.leg.br,sen.anapaulalobato@senado.leg.br,sen.laerciooliveira@senado.leg.br?subject=O%20Senado%20deve%20dar%20uma%20resposta%20%C3%A0%20sociedade%20brasileira&amp;body=Senadores%20e%20Senadoras%2C%0A%0AO%20Brasil%20atravessa%20um%20momento%20que%20exige%20do%20Senado%20Federal%20coragem%20institucional%20e%20responsabilidade.%0A%0AOs%20senhores%20e%20senhoras%20ocupam%20essas%20cadeiras%20porque%20foram%20escolhidos%20pelo%20povo%20para%20represent%C3%A1-lo%2C%20especialmente%20nos%20momentos%20em%20que%20o%20exerc%C3%ADcio%20da%20cidadania%20exige%20uma%20resposta%20firme%20de%20nossas%20institui%C3%A7%C3%B5es.%0A%0AAs%20informa%C3%A7%C3%B5es%20documentadas%20que%20vieram%20a%20p%C3%BAblico%20no%20contexto%20das%20investiga%C3%A7%C3%B5es%20relacionadas%20ao%20Banco%20Master%20s%C3%A3o%20graves%20e%20ampliam%20a%20necessidade%20de%20transpar%C3%AAncia%2C%20esclarecimento%20e%20controle%20institucional.%20N%C3%A3o%20%C3%A9%20razo%C3%A1vel%20que%20acusa%C3%A7%C3%B5es%20dessa%20magnitude%20permane%C3%A7am%20indefinidamente%20sem%20uma%20resposta%20do%20%C3%B3rg%C3%A3o%20ao%20qual%20a%20Constitui%C3%A7%C3%A3o%20atribuiu%20compet%C3%AAncia%20para%20processar%20e%20julgar%20ministros%20do%20Supremo%20Tribunal%20Federal%20por%20crimes%20de%20responsabilidade.%0A%0AN%C3%A3o%20pe%C3%A7o%20condena%C3%A7%C3%A3o%20antecipada.%20Pe%C3%A7o%20algo%20mais%20elementar%3A%20que%20o%20Senado%20cumpra%20seu%20papel.%0A%0AQue%20os%20pedidos%20sejam%20analisados.%20Que%20existam%20decis%C3%B5es%20fundamentadas.%20Que%20os%20fatos%20sejam%20apurados.%20Que%20os%20acusados%20tenham%20pleno%20direito%20de%20defesa.%20E%20que%20a%20sociedade%20receba%20uma%20resposta.%0A%0ASe%20os%20pedidos%20n%C3%A3o%20possuem%20fundamento%2C%20que%20sejam%20rejeitados%20de%20forma%20fundamentada.%20Se%20existem%20elementos%20suficientes%2C%20que%20tenham%20o%20devido%20prosseguimento.%0A%0AO%20que%20n%C3%A3o%20podemos%20aceitar%20%C3%A9%20que%20o%20exerc%C3%ADcio%20dessa%20compet%C3%AAncia%20constitucional%20seja%20substitu%C3%ADdo%20pela%20omiss%C3%A3o%20ou%20pelo%20sil%C3%AAncio.%0A%0AOs%20senhores%20e%20senhoras%20foram%20conduzidos%20ao%20Senado%20pelo%20voto%20popular.%20Neste%20momento%2C%20t%C3%AAm%20diante%20de%20si%20a%20oportunidade%20e%20a%20responsabilidade%20de%20demonstrar%20que%20essa%20representa%C3%A7%C3%A3o%20tem%20significado.%0A%0AA%20atua%C3%A7%C3%A3o%20de%20cada%20parlamentar%2C%20assim%20como%20sua%20omiss%C3%A3o%2C%20far%C3%A1%20parte%20da%20hist%C3%B3ria%20deste%20per%C3%ADodo%20e%20ser%C3%A1%20determinante%20para%20a%20forma%20como%20esta%20legislatura%20ser%C3%A1%20lembrada%20pela%20sociedade%20brasileira.%0A%0AO%20Senado%20deve%20uma%20resposta%20ao%20Brasil.%0A%0AExer%C3%A7am%20a%20compet%C3%AAncia%20que%20a%20Constitui%C3%A7%C3%A3o%20lhes%20confiou.%0A%0AAtenciosamente%2C%0A%0A%5BSEU%20NOME%5D%0A%5BCIDADE%20%2F%20ESTADO%5D%0A">✉ Cobrar os parlamentares</a>
+<p>Mensagem aos sete integrantes titulares da Mesa. Leia, personalize e envie no seu aplicativo de e-mail.</p>
+</div></div></section>
+<section id="mesa"><div class="wrap"><h2>Mesa do Senado</h2>
+<p class="small">Destinatários da mensagem · composição de 11/09/2026.</p>
+<ul class="mesa-list"><li><strong>Davi Alcolumbre</strong> · UNIÃO/AP<span>Presidente</span></li><li><strong>Eduardo Gomes</strong> · PL/TO<span>1º Vice-Presidente</span></li><li><strong>Humberto Costa</strong> · PT/PE<span>2º Vice-Presidente</span></li><li><strong>Daniella Ribeiro</strong> · PP/PB<span>1ª Secretária</span></li><li><strong>Confúcio Moura</strong> · MDB/RO<span>2º Secretário</span></li><li><strong>Ana Paula Lobato</strong> · PSB/MA<span>3ª Secretária</span></li><li><strong>Laércio Oliveira</strong> · PP/SE<span>4º Secretário</span></li></ul></div></section>
+<section id="fontes" style="background:#fff"><div class="wrap"><h2>Fontes e documentos</h2>
+<ol class="source-list">
       <li><a href="https://legis.senado.leg.br/atividade/comissoes/comissao/2015/composicao" target="_blank" rel="noopener">Senado Federal — composição e contatos da Comissão Diretora</a></li>
       <li><a href="https://www12.senado.leg.br/institucional/presidencia/fale-conosco" target="_blank" rel="noopener">Senado Federal — contatos da Presidência</a></li>
       <li><a href="https://www12.senado.leg.br/noticias/materias/2026/09/04/caso-master-viana-pede-providencias-em-relacao-a-denuncias-contra-moraes" target="_blank" rel="noopener">Agência Senado — pedidos de providências no caso Master</a></li>
@@ -348,29 +239,29 @@ Atenciosamente,
       <li><a href="https://www1.folha.uol.com.br/poder/2026/09/pf-suspeita-que-toffoli-tinha-dinheiro-de-vorcaro-em-paraiso-fiscal-diz-revista.shtml" target="_blank" rel="noopener">Folha de S.Paulo — suspeitas investigadas envolvendo Dias Toffoli</a></li>
       <li><a href="https://www1.folha.uol.com.br/colunas/painel/2026/09/alcolumbre-descarta-dar-andamento-a-novos-pedidos-de-impeachment-de-moraes-e-deve-aguardar-stf.shtml" target="_blank" rel="noopener">Folha de S.Paulo — posição atribuída a Alcolumbre sobre os pedidos</a></li>
     </ol>
-    <div class="note">
-      <strong>Atualização:</strong> este material reflete informações disponíveis em 12 de setembro de 2026. Investigações em curso podem produzir novos fatos, correções ou conclusões diferentes.
-    </div>
-  </div>
-</section>
+<p class="small">Atualizado em 12/09/2026. Apurações podem trazer novos fatos e conclusões.</p>
+</div></section>
 </main>
-
-<footer>
-  <div class="wrap">
-    Material cívico e informativo. Nenhuma afirmação nesta página substitui decisão judicial, processo administrativo ou investigação oficial.
-  </div>
-</footer>
-
+<footer><div class="wrap">Material cívico e informativo. Não substitui investigação ou decisão judicial.</div></footer>
+<a class="btn mail-action floating-cta" href="mailto:sen.davialcolumbre@senado.leg.br,sen.eduardogomes@senado.leg.br,sen.humbertocosta@senado.leg.br,sen.daniellaribeiro@senado.leg.br,sen.confuciomoura@senado.leg.br,sen.anapaulalobato@senado.leg.br,sen.laerciooliveira@senado.leg.br?subject=O%20Senado%20deve%20dar%20uma%20resposta%20%C3%A0%20sociedade%20brasileira&amp;body=Senadores%20e%20Senadoras%2C%0A%0AO%20Brasil%20atravessa%20um%20momento%20que%20exige%20do%20Senado%20Federal%20coragem%20institucional%20e%20responsabilidade.%0A%0AOs%20senhores%20e%20senhoras%20ocupam%20essas%20cadeiras%20porque%20foram%20escolhidos%20pelo%20povo%20para%20represent%C3%A1-lo%2C%20especialmente%20nos%20momentos%20em%20que%20o%20exerc%C3%ADcio%20da%20cidadania%20exige%20uma%20resposta%20firme%20de%20nossas%20institui%C3%A7%C3%B5es.%0A%0AAs%20informa%C3%A7%C3%B5es%20documentadas%20que%20vieram%20a%20p%C3%BAblico%20no%20contexto%20das%20investiga%C3%A7%C3%B5es%20relacionadas%20ao%20Banco%20Master%20s%C3%A3o%20graves%20e%20ampliam%20a%20necessidade%20de%20transpar%C3%AAncia%2C%20esclarecimento%20e%20controle%20institucional.%20N%C3%A3o%20%C3%A9%20razo%C3%A1vel%20que%20acusa%C3%A7%C3%B5es%20dessa%20magnitude%20permane%C3%A7am%20indefinidamente%20sem%20uma%20resposta%20do%20%C3%B3rg%C3%A3o%20ao%20qual%20a%20Constitui%C3%A7%C3%A3o%20atribuiu%20compet%C3%AAncia%20para%20processar%20e%20julgar%20ministros%20do%20Supremo%20Tribunal%20Federal%20por%20crimes%20de%20responsabilidade.%0A%0AN%C3%A3o%20pe%C3%A7o%20condena%C3%A7%C3%A3o%20antecipada.%20Pe%C3%A7o%20algo%20mais%20elementar%3A%20que%20o%20Senado%20cumpra%20seu%20papel.%0A%0AQue%20os%20pedidos%20sejam%20analisados.%20Que%20existam%20decis%C3%B5es%20fundamentadas.%20Que%20os%20fatos%20sejam%20apurados.%20Que%20os%20acusados%20tenham%20pleno%20direito%20de%20defesa.%20E%20que%20a%20sociedade%20receba%20uma%20resposta.%0A%0ASe%20os%20pedidos%20n%C3%A3o%20possuem%20fundamento%2C%20que%20sejam%20rejeitados%20de%20forma%20fundamentada.%20Se%20existem%20elementos%20suficientes%2C%20que%20tenham%20o%20devido%20prosseguimento.%0A%0AO%20que%20n%C3%A3o%20podemos%20aceitar%20%C3%A9%20que%20o%20exerc%C3%ADcio%20dessa%20compet%C3%AAncia%20constitucional%20seja%20substitu%C3%ADdo%20pela%20omiss%C3%A3o%20ou%20pelo%20sil%C3%AAncio.%0A%0AOs%20senhores%20e%20senhoras%20foram%20conduzidos%20ao%20Senado%20pelo%20voto%20popular.%20Neste%20momento%2C%20t%C3%AAm%20diante%20de%20si%20a%20oportunidade%20e%20a%20responsabilidade%20de%20demonstrar%20que%20essa%20representa%C3%A7%C3%A3o%20tem%20significado.%0A%0AA%20atua%C3%A7%C3%A3o%20de%20cada%20parlamentar%2C%20assim%20como%20sua%20omiss%C3%A3o%2C%20far%C3%A1%20parte%20da%20hist%C3%B3ria%20deste%20per%C3%ADodo%20e%20ser%C3%A1%20determinante%20para%20a%20forma%20como%20esta%20legislatura%20ser%C3%A1%20lembrada%20pela%20sociedade%20brasileira.%0A%0AO%20Senado%20deve%20uma%20resposta%20ao%20Brasil.%0A%0AExer%C3%A7am%20a%20compet%C3%AAncia%20que%20a%20Constitui%C3%A7%C3%A3o%20lhes%20confiou.%0A%0AAtenciosamente%2C%0A%0A%5BSEU%20NOME%5D%0A%5BCIDADE%20%2F%20ESTADO%5D%0A">✉ Cobrar os parlamentares</a>
 <script>
-function copyMessage() {
-  const text = document.getElementById('message').innerText;
-  navigator.clipboard.writeText(text).then(() => {
-    alert('Mensagem copiada.');
-  }).catch(() => {
-    alert('Não foi possível copiar automaticamente. Selecione o texto e copie manualmente.');
+const floating = document.querySelector('.floating-cta');
+const hero = document.querySelector('.hero');
+const actions = document.querySelectorAll('.mail-action:not(.floating-cta)');
+let pending = false;
+function updateFloating() {
+  const visibleAction = Array.from(actions).some(a => {
+    const r = a.getBoundingClientRect();
+    return r.top < window.innerHeight && r.bottom > 0;
   });
+  floating.classList.toggle('is-visible', hero.getBoundingClientRect().bottom < 0 && !visibleAction);
+  pending = false;
 }
+function scheduleUpdate() {
+  if (!pending) { pending = true; requestAnimationFrame(updateFloating); }
+}
+window.addEventListener('scroll', scheduleUpdate, {passive:true});
+window.addEventListener('resize', scheduleUpdate);
+updateFloating();
 </script>
-
-</body>
-</html>
+</body></html>
